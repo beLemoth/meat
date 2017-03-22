@@ -14,6 +14,11 @@
 		
 		.contacts-info__map {
 			width: 60%; float: left;
+			padding-right: 50px;
+
+			#map {
+				border: 1px solid #000000; box-shadow: 5px 5px 5px 0px rgba(00,00,00,0.5);
+			}
 		}
 
 		.contacts-info__text {
