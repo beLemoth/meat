@@ -1,0 +1,51 @@
+block variables
+
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title #{title}
+        meta(content="" name="author")
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(content="width=1300", name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+
+        //- favicon block start
+        link(rel="icon" type="image/png" href="./assets/img/favicon.png")
+        //- favicon block end
+
+        link(rel='stylesheet' href='./assets/css/foundation.css')
+        link(rel='stylesheet' href='./assets/css/sprite.css')
+        link(rel='stylesheet' href='./assets/css/app.css')
+        
+
+    body
+        include common/_variables
+
+    .preloader
+        .load
+
+    
+    .app
+        block header 
+        #{head_type}
+            .container-wrap
+                .header-logo.icon-logo
+                    a.header-logo__link(href="#") 
+                include common/nav      
+        
+        block content
+
+    script(src='./assets/js/foundation.js' defer)
+    script(src='./assets/js/app.js' defer)
+    <!--[if lt IE 9]>
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+    <![endif]-->
+
+
+
+
+    
+
+        

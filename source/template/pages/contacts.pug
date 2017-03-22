@@ -1,0 +1,12 @@
+extends ../_template
+
+block variables
+	- var title = 'Контакты'
+
+block header
+	- var head_type = header
+
+block content
+	.content-wrapper
+		include ../common/sec-contacts
+	include ../common/footer

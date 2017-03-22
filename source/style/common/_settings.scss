@@ -1,0 +1,10 @@
+@import 'box-sizing';
+@import 'mixins';
+@import 'clearfix';
+
+/* local fonts */
+@include font-face(GothamProLight, 'GothamProLight');
+@include font-face(GothamProMedium, 'GothamProMedium');
+@include font-face(GothamProRegular, 'GothamProRegular');
+@include font-face(GothamProBold, 'GothamProBold');
+@include font-face(Lato-Thin, 'Lato-Thin');

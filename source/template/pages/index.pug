@@ -1,0 +1,16 @@
+
+extends ../_template
+
+block variables
+	- var title = '\"Рецепты бульбаша\" производство колбас и мясных деликатесов высокого качества'
+
+block header
+	-var head_type = header_main 
+
+block content
+	.content-wrapper
+		include ../common/sec-carousel
+		include ../common/sec-about
+		include ../common/sec-rules
+	include ../common/footer
+

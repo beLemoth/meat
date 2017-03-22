@@ -1,0 +1,28 @@
+/* footer */
+
+.footer {
+ 	padding-top: 41px; min-height: $footer-size;
+ 	position: absolute; bottom: 0; left: 0; right: 0;
+ 	background-color: $header-color;
+
+ 	.logo {
+ 		float: left; margin-top: 10px;
+        transition: transform ease-out 0.4s;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+
+		.logo__link {
+            display: block; width: 100%; height: 100%;
+        }
+ 	}
+
+ 	.footer-rights {
+ 		@extend .clearfix; margin-top: 36px; margin-right: -24px;
+ 		.footer-rights__text {
+ 			float: right; 
+ 			@include font-type($black-color, $lato-font, 1.5em, 1.25, .5px);
+ 		}
+ 	}
+}

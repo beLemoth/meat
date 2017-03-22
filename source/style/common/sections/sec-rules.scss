@@ -1,0 +1,25 @@
+/* rules */
+
+.rules {
+        padding-top:41px; min-height: 930px; 
+
+        h2 {
+            margin-bottom: 152px;
+        }
+
+        .container-wrap {
+            @extend .clearfix;
+            padding: 0 60px;
+        }
+
+        .rules__item {
+            text-align: center; margin-bottom: 58px; width: 33%;
+            float: left;
+            .rules__item_icon {
+                margin: 0 auto 40px;
+            }
+            .rules__item_text {
+                line-height: 30px;
+            }
+        }
+    }

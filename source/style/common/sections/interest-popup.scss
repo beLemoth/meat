@@ -1,0 +1,54 @@
+/* interest popup */
+
+.popup {
+    font-variant: small-caps;
+    .modal {
+        .modal-content {
+            position: relative;
+            padding: 100px 165px 100px 155px; border-radius: 0; background-color: #fcfbfa;
+            border: 1px solid #888888;
+            h2 {
+                @include font-type($black-color, $bold-font, 2.1em, 30px, 0);
+                text-align: center; margin-bottom: 60px;
+            }
+            h3 {
+                @include font-type($black-color, $regular-font, 1.7em, 28px, 0);
+                text-align: center; margin: 15px 0; margin-top: 0;
+            }
+            p {
+                @include font-type($black-color, $light-font, 1.6em, 27px, 0);
+                margin: 15px 0;
+            }
+        }
+
+        span.close {
+
+            position: absolute; right: 49px; top: 36px;
+            font-size: 3em; opacity: 1; 
+        }
+
+        table {
+            width: 100%; margin: 15px 0;
+
+            th, td {
+                text-align: center; vertical-align: middle;
+                border: 1px solid $black-color; 
+                padding: 5px;
+                @include font-type($black-color, $light-font, 1.6em, 27px, 0);
+            }
+
+            th {
+                font-family: $regular-font;
+            }
+
+        }
+    }
+
+    .modal {
+        min-width: 1300px;
+    }
+ 
+    .modal-dialog {
+        min-width: 990px;
+   }
+}

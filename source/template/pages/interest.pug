@@ -1,0 +1,15 @@
+extends ../_template
+
+block variables
+	- var title = 'Интересно знать'
+
+block header
+	- var head_type = header
+
+block content
+
+	.content-wrapper
+		include ../common/sec-interest
+		
+	include ../common/footer
+	include ../common/interest-popup

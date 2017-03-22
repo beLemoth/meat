@@ -1,0 +1,17 @@
+// navigation
+
+nav.nav.clearfix
+
+		ul.nav-list
+			-
+				var menu = {
+					'О компании' : 'index.html',
+					'Каталог' : 'catalog.html',
+					'Прайс' : '#',
+					'Интересно знать' : 'interest.html',
+					'Контакты' : 'contacts.html'
+				}
+			
+			each href, item in menu
+				li.nav-list__item
+					a.nav-list__item_link(href=''+href)= item

@@ -1,0 +1,42 @@
+/* carousel */
+
+.slide {
+        min-height: 722px; position: static;
+        overflow: hidden;
+
+        .carousel-inner {
+            position: absolute; top: 0; width: $carousel-width;
+            margin: auto;
+        }
+
+        .item {
+            .carousel-caption {
+                left: 90px; top: 190px;
+                h3 {
+                    @include font-type($green-color, $regular-font, 2.5em, 35px, -0.6px);
+                    text-align: left; margin-bottom: 13px;
+                }
+                p {
+                    @include font-type($white-color, $light-font, 1.6em, 26px, -0.6px);
+                    text-align: left;
+                    text-shadow: none;
+                }
+            }
+        }
+
+        .carousel-indicators {
+            bottom: 0;
+            li {
+                background-color: #ffffff;
+                border-color: #ffffff;
+                width: 15px; height: 15px;
+                margin: 1px 3px;
+                &.active {
+                    width: 15px; height: 15px;
+                    background-color: #8d160b;
+                    border-color: #8d160b;
+                    margin: 1px 3px;
+                }
+            }
+        }
+    }

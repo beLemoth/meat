@@ -1,0 +1,96 @@
+@import 'common/settings';
+@import 'common/clearfix';
+
+// variables 
+
+$light-font: 'GothamProLight', sans-serif;
+$medium-font: 'GothamProMedium', sans-serif;
+$regular-font: 'GothamProRegular', sans-serif;
+$bold-font: 'GothamProBold', sans-serif;
+$lato-font: 'Lato-Thin', sans-serif;
+
+$header-color: #f2e4c7;
+$light-color: #fefefd;
+$green-color: #81a725;
+$white-color: #ffffff;
+$black-color: #000000;
+$button-color: #c4d759;
+$undl-color: #9b2219;
+$preload-bg-color: #f2e4c7;
+
+$content-width: 1300px;
+$container-width: 1120px;
+$carousel-width: 1300px;
+
+$footer-size: 253px;
+
+html {
+	height: 100%; width: 100%; min-width: 1300px;
+	font: {
+		family: $light-font; variant: small-caps;
+	}
+}
+
+body {
+  margin: 0; height: 100%; min-width: 1300px;
+}
+
+.app {
+    min-height: 100%; position: relative; width: 100%;
+}
+
+.content-wrapper {
+    width: $content-width; margin: auto;
+    padding-bottom: $footer-size;
+}
+
+.container-wrap {
+	width: $container-width;
+    margin: auto;
+}
+
+// global styles
+
+.button {
+    
+    text-decoration: none; display: block; width: 256px; height: 52px;
+    background-color: $button-color; text-align: center;
+    @include font-type($black-color, $regular-font, 1.5em, 2.5, 0);
+    transition: color ease-in 0.2s;
+
+    &:hover {
+        text-decoration: none; color: $white-color;
+    }
+
+    &:active {
+        text-decoration: none; color: $white-color;
+    }
+
+    &:focus {
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+h1 {
+    text-align: center;  margin-bottom: 93px;
+    @include font-type($black-color, $medium-font, 2.1em, 2, 0);
+    position: relative;
+    &:after {
+        content: ''; display: block; width: 180px; margin: auto; border: 1px solid $undl-color;
+        position: absolute; left: 50%; margin-left: -90px; bottom: -5px;
+    }
+}
+
+h2 {
+    text-align: center;
+    @include font-type($black-color, $medium-font, 2.1em, 1.1, -0.2px);
+}
+p {
+    @include font-type($black-color, $light-font, 1.8em, 1, -0.35px);
+}
+
+
+// import sections
+
+@import 'common/sections/**/*.scss'

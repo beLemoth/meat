@@ -1,0 +1,43 @@
+/* contacts */
+
+.contacts {
+
+	padding: 75px 20px 190px;
+    background: #fff url('../img/cont-bg.png') right 659px no-repeat;
+	
+	h1 {
+		margin-bottom: 138px;
+	}
+	
+	.contacts-info {
+		@extend .clearfix;
+		
+		.contacts-info__map {
+			width: 60%; float: left;
+		}
+
+		.contacts-info__text {
+			width: 40%; float: left; padding-left: 7px;
+
+			h3 {
+            	@include font-type($black-color, $regular-font, 1.8em, 22px, 0);
+            	margin: 0 0 24px;
+	        }
+		}
+
+		&__addr {
+			margin-bottom: 33px; letter-spacing: -1.5px;
+		}
+
+		&__tel {
+			line-height: 30px; margin-bottom: 56px; letter-spacing: -1.5px;
+		}
+
+		&__email {
+			@include font-type($black-color, $lato-font, 1.8em, 30px, -1.5px);
+		}
+
+	}
+
+
+}

@@ -1,0 +1,49 @@
+/* interesting */
+
+.interest {
+    padding: 75px 0 145px;
+
+    .articles {
+        width: 990px; margin: auto;
+        .article-item {
+            height: 412px; border: 1px solid #acacac;
+            border-bottom: 0;
+            @extend .clearfix;
+            .article-item__img {
+                overflow: hidden; width: 50%;
+                float: left; height: 100%;
+                img {
+                    height: 100%; width: auto;
+                }
+            }
+            .article-item__desc {
+            	padding: 41px 40px 48px 64px; position: relative; vertical-align: top;
+            	width: 50%; height: 100%;
+                float: left;
+            	h3 {
+                    @include font-type($black-color, $bold-font, 1.8em, 32px, -.5px); position: relative;
+                    margin-bottom: 71px; margin-top: 0;
+                    &:after {
+                        content: ''; width: 200px; border: 1px solid $undl-color; position: absolute; left: 0; bottom: -33px;
+                    }
+                }
+                p {
+                    @include font-type($black-color, $light-font, 1.6em, 26px, -.5px);
+                    margin-bottom: 55px;
+                }
+                .button {
+                	position: absolute; bottom: 50px; left: 67px; letter-spacing: -.5px;
+                }
+            }
+			&:nth-child(even) {
+            	.article-item__img,
+                .article-item__desc {
+                    float:right;
+                }
+        	}
+        	&:last-child {
+        		border-bottom: 1px solid #acacac;
+        	}
+        }
+    }
+}

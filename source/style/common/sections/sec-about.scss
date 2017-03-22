@@ -1,0 +1,34 @@
+/* about */
+
+.about {
+        position: relative; padding-top: 130px; min-height: 1368px;
+        /*background:transparent url('../img/about-bg.png') center -48px no-repeat;*/
+        background: url('../img/main-bottom-bg.png') center bottom no-repeat,
+                    url('../img/main-l1-bg.png') left -24px no-repeat,
+                    url('../img/main-l2-bg.png') left 370px no-repeat,
+                    url('../img/main-r1-bg.png') right 57px no-repeat,
+                    url('../img/main-r2-bg.png') right 543px no-repeat;
+
+        h2 {
+            text-align: center; margin-bottom: 73px;
+        }
+        p {
+            margin-bottom: 65px; line-height: 30px; margin-left: 220px; letter-spacing: -0.4px;
+            &:nth-child(3) {
+                margin-bottom: 267px;
+            }
+            strong {
+                color: #02619d;
+            }
+        }
+        .about__bottom {
+                margin-left: 440px; 
+            }
+
+        &:before {
+            position: absolute; top: 73px; left: 50%; margin-left: -284px;
+            content: ''; z-index: -100;
+            width: 569px; height: 1178px;
+            background-color: #f2e4c7;
+        }
+    }
