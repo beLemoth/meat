@@ -1,0 +1,39 @@
+// CATALOG
+
+section.catalog
+
+	.catalog_header
+
+		h2 Каталог
+
+		ul.catalog__header_list
+
+			each href, item in c_items
+				li.catalog__header_list-item
+					a.catalog__header_list-item-link(class=''+href, href='#'+href)= item
+
+	.catalog-view
+
+		.catalog-view-wrapp
+
+			.catalog-item
+				.catalog-item__desc
+					h3.catalog-item__desc_header
+					p.catalog-item__desc_text
+				.catalog-item__image
+					img(src="", alt="медовая")
+				.catalog-item__params
+					table.catalog-item__params_table
+						tr
+							th Состав
+							th Срок реализации
+							th Срок реализации в вакуумной упаковке
+							th Оболочка
+							th Диаметр
+						tr
+							td.composition 
+							td.sale-term 120 суток
+							td.full-sale-term 150 суток
+							td.pack белковая
+							td.size 50 мм
+
