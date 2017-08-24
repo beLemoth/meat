@@ -17,6 +17,11 @@ $black-color: #000000;
 $button-color: #c4d759;
 $undl-color: #9b2219;
 $preload-bg-color: #f2e4c7;
+$catalog-item-hover: #a80f3a;
+$catalog-item-header: #cb2417;
+
+
+$table-border: 2px solid #acacac;
 
 $content-width: 1300px;
 $container-width: 1120px;
@@ -72,7 +77,7 @@ body {
     }
 }
 
-h1 {
+/*h1 {
     text-align: center;  margin-bottom: 93px;
     @include font-type($black-color, $medium-font, 2.1em, 2, 0);
     position: relative;
@@ -80,7 +85,7 @@ h1 {
         content: ''; display: block; width: 180px; margin: auto; border: 1px solid $undl-color;
         position: absolute; left: 50%; margin-left: -90px; bottom: -5px;
     }
-}
+}*/
 
 h2 {
     text-align: center;
@@ -88,6 +93,18 @@ h2 {
 }
 p {
     @include font-type($black-color, $light-font, 1.8em, 1, -0.35px);
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
 }
 
 

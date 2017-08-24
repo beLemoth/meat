@@ -1,0 +1,237 @@
+// catalog section
+
+.catalog {
+
+	&__header {
+
+		padding-top: 100px;
+		min-height: 580px;
+		//min-height: 180px;
+		border-bottom: 2px solid rgba(136,136,136,0.2);
+		
+		&_h2 {
+			margin-bottom: 70px;
+		}
+		
+		&_list {
+			//display: none;
+			width: 990px; margin: auto;
+			@extend .clearfix;
+
+			&-item {
+
+				float: left;
+				width: 25%;
+				text-align: left; vertical-align: bottom;
+				height: 300px;
+				list-style: none;
+				padding: 0 15px 0px 15px;
+
+				&-link {
+
+					@include font-type($black-color, $regular-font, 1.7em, 1.2, 0);
+					display: block; padding-top: 200px;
+					&:hover {
+						color: $catalog-item-hover;
+					}
+				}
+			}
+
+			.salami {
+				background: url('../img/salami.png') center 30px no-repeat;
+			}
+
+			.meat {
+				background: url('../img/meat.png') center top no-repeat;
+			}
+
+			.sausage {
+				background: url('../img/sausage.png') center 30px no-repeat;
+			}
+
+			.bacon {
+				background: url('../img/bacon.png') center 30px no-repeat;
+			} 
+
+		}
+	}
+
+	&-view {
+		
+		&-wrap {
+			padding-top: 55px; padding-bottom: 95px;
+			position: relative;
+			&:before {
+				position: absolute; left: 50%; top: 0; bottom: 95px; width: 566px; content: '';
+				margin-left: -283px;
+				z-index:-200;
+
+				background-color: $header-color;
+			}
+		}
+	}
+
+	&-item {
+
+		position: relative; height: 635px;
+		margin-bottom: 190px; margin-top: 95px;
+
+		&__desc {
+
+			position: absolute; top: 35px; left: 140px;
+
+			width: 400px; height: 320px; background-color: $white-color;
+			padding-left: 45px;
+
+			box-shadow: 4px 7px 22px 0 rgba(0, 0, 2, 0.19);
+
+
+			&_header {
+				
+				height: 50%;
+				position: relative;
+
+				.text {
+					position: absolute; bottom: 30px; left: 0;
+					@include font-type($catalog-item-header, $regular-font, 2em, 1.2, 0);
+				}
+
+				&:after {
+					position: absolute; bottom: 0; left: 0; width: 180px;
+					content: '';
+					border-bottom: 1px solid #949494;
+				} 
+			}
+
+			&_text {
+				position: relative; height: 50%;
+
+				.text {
+					position: absolute; top: 30px; left: 0;
+					@include font-type($black-color, $light-font, 1.4em, 1.2, 0);
+				}	
+			}
+		}
+
+		&__image {
+			position: absolute; right: 185px; top: 0;
+			width: 586px; height: 390px;
+			box-shadow: 4px 7px 22px 0 rgba(0, 0, 2, 0.19);
+			img {
+				width: 100%;
+			}
+		}
+
+		&__color {
+			width: 900px; height: 420px;
+			position: absolute; top: 35px; right: 155px;
+			opacity: .8;
+			box-shadow: 4px 7px 22px 0 rgba(0, 0, 2, 0.31);
+		}
+
+		&__params {
+
+			position: absolute; bottom: 0; right: 155px;
+
+			&_table {
+
+				border-collapse: collapse;
+				border: $table-border;
+				background-color: rgba(255,255,255,.63);
+				text-align: center; vertical-align: middle;
+				box-shadow: 4px 7px 22px 0 rgba(0, 0, 2, 0.19);
+
+
+				.composition {
+					width: 110px;
+					&.pig {
+						background: url('../img/pig.png') center no-repeat;
+					}
+				}
+
+				.sale-term {
+					width: 160px;
+				}
+
+				.full-sale-term {
+					width: 245px;
+				}
+
+				.pack {
+					width: 140px;
+				}
+
+				.size {
+					width: 121px;
+				}
+
+				tr {
+					height: 80px;
+					border: $table-border;
+				}
+
+				th {
+					@include font-type($black-color, $regular-font, 1.4em, 1.2, 0);
+					border: $table-border; text-align: center;
+				}
+
+				td {
+					border: $table-border;
+					@include font-type($black-color, $light-font, 1.4em, 1.2, 0);
+				}
+
+			}
+		}
+
+		&.green {
+			background: url('../img/catalog-item-bg-1.png') 100px 90% no-repeat;	
+			.catalog-item__color {
+				background-color: #79a952;
+			}
+		}
+
+		&.red {
+			background: url('../img/catalog-item-bg-2.png') 180px 90% no-repeat;	
+			.catalog-item__color {
+				background-color: #bd3739;
+			}
+		}
+
+		&.brown {
+			background: url('../img/catalog-item-bg-3.png') 110px 98% no-repeat;	
+			.catalog-item__color {
+				background-color: #340b09;
+			}
+		}
+
+		&.ginger {
+			background: url('../img/catalog-item-bg-4.png') 123px 72% no-repeat;	
+			.catalog-item__color {
+				background-color: #ec8324;
+			}
+		}
+
+		&.grey {
+			background: url('../img/catalog-item-bg-5.png') 123px 72% no-repeat;	
+			.catalog-item__color {
+				background-color: #808359;
+			}
+		}
+
+		&:after {
+			position: absolute; bottom: -95px; left: 50%; width: 200px;
+			content: '';
+			margin-left: -100px;
+			border-bottom: 1px solid #b6a48b;
+		}
+
+		&:last-child {
+
+			margin-bottom: 95px;
+
+			&:after {
+				border: 0;
+			}
+		}
+	}
+} 

@@ -1,8 +1,26 @@
 /* carousel */
 
 .slide {
-        min-height: 722px; position: static;
+        height: 722px; position: static;
         overflow: hidden;
+
+        .descript {
+            position: absolute; left: 0; top: 290px;
+            z-index: 100; padding: 50px 90px 50px 90px;
+            display: inline-block;
+            background: rgba(52,11,9,.6);
+            box-shadow: 4px 7px 22px 0 rgba(52, 11, 9, 0.4);
+
+            &__header {
+                @include font-type($green-color, $regular-font, 2.5em, 35px, -0.6px);
+                text-align: left; margin-bottom: 13px;
+            }
+            &__text {
+                @include font-type($white-color, $light-font, 1.6em, 26px, -0.6px);
+                text-align: left;
+                text-shadow: none;
+            }
+        }
 
         .carousel-inner {
             position: absolute; top: 0; width: $carousel-width;
@@ -10,6 +28,7 @@
         }
 
         .item {
+
             .carousel-caption {
                 left: 90px; top: 190px;
                 h3 {

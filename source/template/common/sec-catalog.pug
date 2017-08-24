@@ -2,38 +2,218 @@
 
 section.catalog
 
-	.catalog_header
+	.container-wrapper
 
-		h2 Каталог
+		.catalog__header
 
-		ul.catalog__header_list
+			h2.catalog__header_h2 Каталог
 
-			each href, item in c_items
-				li.catalog__header_list-item
-					a.catalog__header_list-item-link(class=''+href, href='#'+href)= item
+			ul.catalog__header_list
 
-	.catalog-view
+				each href, item in c_items
+					li.catalog__header_list-item(class=''+href)
+						a.catalog__header_list-item-link( href='#'+href)= item
 
-		.catalog-view-wrapp
+		.catalog-view
 
-			.catalog-item
-				.catalog-item__desc
-					h3.catalog-item__desc_header
-					p.catalog-item__desc_text
-				.catalog-item__image
-					img(src="", alt="медовая")
-				.catalog-item__params
-					table.catalog-item__params_table
-						tr
-							th Состав
-							th Срок реализации
-							th Срок реализации в вакуумной упаковке
-							th Оболочка
-							th Диаметр
-						tr
-							td.composition 
-							td.sale-term 120 суток
-							td.full-sale-term 150 суток
-							td.pack белковая
-							td.size 50 мм
+			.catalog-view-wrap
 
+				.catalog-item.green
+					.catalog-item__color
+					.catalog-item__desc
+						.catalog-item__desc_header 
+							.text Колбаса «Медовая» <br>высшего сорта
+						.catalog-item__desc_text 
+							.text Мясной продукт. Сырокопченое <br>колбасное изделие полусухое
+					.catalog-item__image
+						img(src="assets/img/medovaia.jpg", alt="Медовая")
+
+					.catalog-item__params
+						table.catalog-item__params_table
+							tr
+								th Состав
+								th Срок <br>реализации
+								th Срок реализации <br>в вакуумной упаковке
+								th Оболочка
+								th Диаметр
+							tr
+								td.composition.pig 
+								td.sale-term 120 суток
+								td.full-sale-term 150 суток
+								td.pack белковая
+								td.size 35 мм
+				
+				.catalog-item.red
+					.catalog-item__color
+					.catalog-item__desc
+						.catalog-item__desc_header 
+							.text Колбаса «Бужоле» <br>высшего сорта
+						.catalog-item__desc_text 
+							.text Сырокопченое колбасное <br>изделие полусухое
+					.catalog-item__image
+						img(src="assets/img/bugole.jpg", alt="Бужоле")
+
+					.catalog-item__params
+						table.catalog-item__params_table
+							tr
+								th Состав
+								th Срок <br>реализации
+								th Срок реализации <br>в вакуумной упаковке
+								th Оболочка
+								th Диаметр
+							tr
+								td.composition.pig 
+								td.sale-term 120 суток
+								td.full-sale-term 150 суток
+								td.pack белковая
+								td.size 50 мм
+
+				.catalog-item.brown
+					.catalog-item__color
+					.catalog-item__desc
+						.catalog-item__desc_header 
+							.text Колбаса «Новинка»  <br>высшего сорта
+						.catalog-item__desc_text 
+							.text Сырокопченое колбасное <br>изделие полусухое
+					.catalog-item__image
+						img(src="assets/img/novinka.jpg", alt="Новинка")
+
+					.catalog-item__params
+						table.catalog-item__params_table
+							tr
+								th Состав
+								th Срок <br>реализации
+								th Срок реализации <br>в вакуумной упаковке
+								th Оболочка
+								th Диаметр
+							tr
+								td.composition.pig 
+								td.sale-term 120 суток
+								td.full-sale-term 150 суток
+								td.pack белковая
+								td.size 50 мм	
+				
+				.catalog-item.ginger
+					.catalog-item__color
+					.catalog-item__desc
+						.catalog-item__desc_header 
+							.text Колбаса «Карпаччо <br>по-охотничьи»  <br>высшего сорта
+						.catalog-item__desc_text 
+							.text Сырокопченое колбасное <br>изделие полусухое
+					.catalog-item__image
+						img(src="assets/img/karpacho.jpg", alt="Карпаччо")
+
+					.catalog-item__params
+						table.catalog-item__params_table
+							tr
+								th Состав
+								th Срок <br>реализации
+								th Срок реализации <br>в вакуумной упаковке
+								th Оболочка
+								th Диаметр
+							tr
+								td.composition.pig 
+								td.sale-term 120 суток
+								td.full-sale-term 150 суток
+								td.pack белковая
+								td.size 50 мм	
+
+				.catalog-item.grey
+					.catalog-item__color
+					.catalog-item__desc
+						.catalog-item__desc_header 
+							.text Колбаса «Имперская <br>на коньяке»<br>высшего сорта
+						.catalog-item__desc_text 
+							.text Сырокопченое колбасное <br>изделие полусухое
+					.catalog-item__image
+						img(src="assets/img/imperskaia.jpg", alt="Имперская")
+
+					.catalog-item__params
+						table.catalog-item__params_table
+							tr
+								th Состав
+								th Срок <br>реализации
+								th Срок реализации <br>в вакуумной упаковке
+								th Оболочка
+								th Диаметр
+							tr
+								td.composition.pig 
+								td.sale-term 120 суток
+								td.full-sale-term 150 суток
+								td.pack белковая
+								td.size 50 мм	
+
+				.catalog-item.green
+					.catalog-item__color
+					.catalog-item__desc
+						.catalog-item__desc_header 
+							.text Колбаса<br>«Киндюк по-охотничьи»<br>высшего сорта
+						.catalog-item__desc_text 
+							.text Сырокопченое колбасное<br> изделие полусухое
+					.catalog-item__image
+						img(src="assets/img/kinduk.jpg", alt="Киндюк")
+
+					.catalog-item__params
+						table.catalog-item__params_table
+							tr
+								th Состав
+								th Срок <br>реализации
+								th Срок реализации <br>в вакуумной упаковке
+								th Оболочка
+								th Диаметр
+							tr
+								td.composition.pig 
+								td.sale-term 120 суток
+								td.full-sale-term 150 суток
+								td.pack белковая
+								td.size 50 мм
+
+				.catalog-item.red
+					.catalog-item__color
+					.catalog-item__desc
+						.catalog-item__desc_header 
+							.text Колбаса <br>«От Бабушки» <br>высшего сорта
+						.catalog-item__desc_text 
+							.text Сыровяленое<br> колбасное изделие
+					.catalog-item__image
+						img(src="assets/img/otbabushki.jpg", alt="От Бабушки")
+
+					.catalog-item__params
+						table.catalog-item__params_table
+							tr
+								th Состав
+								th Срок <br>реализации
+								th Срок реализации <br>в вакуумной упаковке
+								th Оболочка
+								th Диаметр
+							tr
+								td.composition.pig 
+								td.sale-term 45 суток
+								td.full-sale-term 3 месяца
+								td.pack натуральная
+								td.size 35 мм
+
+				.catalog-item.brown
+					.catalog-item__color
+					.catalog-item__desc
+						.catalog-item__desc_header 
+							.text Колбаса «Дедушкин Рецепт»  <br>высшего сорта
+						.catalog-item__desc_text 
+							.text Сыровяленое<br> колбасное изделие
+					.catalog-item__image
+						img(src="assets/img/dedushkin.jpg", alt="Дедушкин Рецепт")
+
+					.catalog-item__params
+						table.catalog-item__params_table
+							tr
+								th Состав
+								th Срок <br>реализации
+								th Срок реализации <br>в вакуумной упаковке
+								th Оболочка
+								th Диаметр
+							tr
+								td.composition.pig 
+								td.sale-term 45 суток
+								td.full-sale-term 3 месяца
+								td.pack натуральная
+								td.size 35 мм
