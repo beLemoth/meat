@@ -28,7 +28,7 @@ $( document ).ready(function() {
             lng: 31.0938659,
             width: '100%',
             height: '500px',
-            zoom: 18
+            zoom: 16
         });
 
         map.addMarker({

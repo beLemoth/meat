@@ -5,7 +5,8 @@
 	padding: 75px 20px 190px;
     background: #fff url('../img/cont-bg.png') right 659px no-repeat;
 	
-	h1 {
+	&__header {
+		@extend .interest__header;
 		margin-bottom: 138px;
 	}
 	
