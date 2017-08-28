@@ -1,0 +1,14 @@
+extends ../_template
+
+block variables
+	- var title = 'Ассортимент'
+
+block header
+	- var head_type = header
+
+block content
+
+	.content-wrapper
+		include ../common/sec-range
+		
+	include ../common/footer
