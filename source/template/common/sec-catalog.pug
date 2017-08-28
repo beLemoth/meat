@@ -11,14 +11,14 @@ section.catalog
 			ul.catalog__header_list
 
 				each href, item in c_items
-					li.catalog__header_list-item(class=''+href)
-						a.catalog__header_list-item-link( href='#'+href)= item
+					li.catalog__header_list-item(id=''+href)
+						.catalog__header_list-item-link= item
 
 		.catalog-view
 
 			.catalog-view-wrap
 
-				.catalog-item.green
+				.catalog-item.salami-group
 					.catalog-item__color
 					.catalog-item__desc
 						.catalog-item__desc_header 
@@ -43,7 +43,7 @@ section.catalog
 								td.pack белковая
 								td.size 35 мм
 				
-				.catalog-item.red
+				.catalog-item.salami-group
 					.catalog-item__color
 					.catalog-item__desc
 						.catalog-item__desc_header 
@@ -68,7 +68,7 @@ section.catalog
 								td.pack белковая
 								td.size 50 мм
 
-				.catalog-item.brown
+				.catalog-item.salami-group
 					.catalog-item__color
 					.catalog-item__desc
 						.catalog-item__desc_header 
@@ -93,7 +93,7 @@ section.catalog
 								td.pack белковая
 								td.size 50 мм	
 				
-				.catalog-item.ginger
+				.catalog-item.salami-group
 					.catalog-item__color
 					.catalog-item__desc
 						.catalog-item__desc_header 
@@ -118,7 +118,7 @@ section.catalog
 								td.pack белковая
 								td.size 50 мм	
 
-				.catalog-item.grey
+				.catalog-item.salami-group
 					.catalog-item__color
 					.catalog-item__desc
 						.catalog-item__desc_header 
@@ -143,7 +143,7 @@ section.catalog
 								td.pack белковая
 								td.size 50 мм	
 
-				.catalog-item.green
+				.catalog-item.salami-group
 					.catalog-item__color
 					.catalog-item__desc
 						.catalog-item__desc_header 
@@ -168,7 +168,7 @@ section.catalog
 								td.pack белковая
 								td.size 50 мм
 
-				.catalog-item.red
+				.catalog-item.salami-group
 					.catalog-item__color
 					.catalog-item__desc
 						.catalog-item__desc_header 
@@ -193,7 +193,7 @@ section.catalog
 								td.pack натуральная
 								td.size 35 мм
 
-				.catalog-item.brown
+				.catalog-item.salami-group
 					.catalog-item__color
 					.catalog-item__desc
 						.catalog-item__desc_header 
@@ -216,4 +216,4 @@ section.catalog
 								td.sale-term 45 суток
 								td.full-sale-term 3 месяца
 								td.pack натуральная
-								td.size 35 мм
+								td.size 35 мм			

@@ -6,10 +6,16 @@
     background: #fff url('../img/cont-bg.png') right 659px no-repeat;
 	
 	&__header {
+<<<<<<< HEAD
 
         @extend .interest__header;
         margin-bottom: 138px;
     }
+=======
+		@extend .interest__header;
+		margin-bottom: 138px;
+	}
+>>>>>>> ddaf71a60475825885ec075bb23dd2f3461bb0c0
 	
 	.contacts-info {
 		@extend .clearfix;

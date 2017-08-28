@@ -10,6 +10,15 @@ $( document ).ready(function() {
 		pause: "hover"
 	});
 
+    $('#salami').addClass('active');
+
+    $('.catalog__header_list-item').on('click', function () {
+        $('.catalog__header_list-item').removeClass('active');
+        var selectedGroup = $(this).addClass('active').prop('id');
+        $('.catalog-item').css('display','none');
+        $('.'+selectedGroup+'-group').css('display','block');
+    })
+
 	$('#myModal').modal();
 
     if ($('div').is('#map')) {
@@ -19,7 +28,7 @@ $( document ).ready(function() {
             lng: 31.0938659,
             width: '100%',
             height: '500px',
-            zoom: 18
+            zoom: 16
         });
 
         map.addMarker({
