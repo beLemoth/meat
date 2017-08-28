@@ -5,7 +5,9 @@
 	padding-top: 60px;
 
 	&__header {
+
 		@extend .contacts__header;
+		margin-bottom: 60px;
 	}
 
 	&-product {
