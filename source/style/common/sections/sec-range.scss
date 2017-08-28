@@ -1,0 +1,102 @@
+// RANGE
+
+.range {
+
+	padding-top: 60px;
+
+	&__header {
+		@extend .contacts__header;
+	}
+
+	&-product {
+
+		&__header {
+
+			width: 100%;
+			margin-bottom: 60px;
+
+			.requisites {
+				height: 250px;
+				@include font-type($black-color, $regular-font, 1.4em, 1.2, 0);
+				&__english {
+					padding-left: 60px;
+					width: 40%;
+				}
+				&__logo {
+					width: 20%;
+					background: url('../img/bglogo.png') center no-repeat;
+					background-size: contain;
+				}
+				&__russian {
+					padding-left: 35px;
+					width: 40%;
+				}
+
+				.full-name,
+				.name,
+				.addr {
+					margin-bottom: 15px;
+				}
+
+				.mail {
+					font-variant: normal;
+				}
+			}
+		}
+
+		.range__list {
+			@include font-type($black-color, $regular-font, 1.4em, 1.2, 0);
+			width: 100%;
+			margin: 0 30px;
+
+			border: 1px solid $black-color;
+
+			th,
+			td,
+			tr {
+				border: 1px solid $black-color;
+				padding: 2px 10px;
+			}
+
+			&_header {
+				width: 100%;
+				line-height: 2;
+
+				&-number {
+					width: 10%;
+					text-align: center;
+				}
+				&-name {
+					width: 60%;
+					text-align: center;
+				}
+				&-term {
+					width: 30%;
+					text-align: center;
+				}
+			}
+			&_group {
+				text-decoration: underline;
+				line-height: 2;
+				font-style: italic;
+				
+				&-item-number {
+					text-align: center;
+				}
+
+				&-item-term {
+					text-align: center;
+				}
+
+			}
+		}
+	}
+
+	&__footer {
+		padding-left: 100px;
+		text-decoration: underline;
+		text-align: center;
+		margin-bottom: 100px;
+		@include font-type($black-color, $bold-font, 1.8em, 100px, 0);
+	}
+}
