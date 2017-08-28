@@ -44,9 +44,9 @@
 					}
 				}
 			}
-
+			
 			#salami {
-				background: url('../img/salami.png') center 30px no-repeat;
+				background: url('../img/salami.png') center top no-repeat;
 			}
 
 			#meat {
@@ -54,12 +54,34 @@
 			}
 
 			#sausage {
-				background: url('../img/sausage.png') center 30px no-repeat;
+				background: url('../img/sausage.png') center top no-repeat;
 			}
 
 			#bacon {
-				background: url('../img/bacon.png') center 30px no-repeat;
+				background: url('../img/bacon.png') center top no-repeat;
 			}
+			
+			/*
+			#salami {
+				background: url('../img/salami.jpg') center top no-repeat;
+				background-size: contain;
+			}
+
+			#meat {
+				background: url('../img/meat.jpg') center top no-repeat;
+				background-size: contain;
+			}
+			
+			#sausage {
+				background: url('../img/sausage.jpg') center top no-repeat;
+				background-size: contain;
+			}
+
+			#bacon {
+				background: url('../img/bacon.jpg') center top no-repeat;
+				background-size: contain;
+			}
+			*/
 
 		}
 	}

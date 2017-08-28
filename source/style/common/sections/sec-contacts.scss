@@ -3,19 +3,13 @@
 .contacts {
 
 	padding: 75px 20px 190px;
-    background: #fff url('../img/cont-bg.png') right 659px no-repeat;
+    background: #fff url('../img/cont-bg.png') center 180px no-repeat;
 	
 	&__header {
-<<<<<<< HEAD
 
         @extend .interest__header;
         margin-bottom: 138px;
     }
-=======
-		@extend .interest__header;
-		margin-bottom: 138px;
-	}
->>>>>>> ddaf71a60475825885ec075bb23dd2f3461bb0c0
 	
 	.contacts-info {
 		@extend .clearfix;
@@ -48,6 +42,7 @@
 
 		&__email {
 			@include font-type($black-color, $lato-font, 1.8em, 30px, -1.5px);
+			font-variant: normal;
 		}
 
 	}
