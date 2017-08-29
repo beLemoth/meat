@@ -3,7 +3,8 @@
 .contacts {
 
 	padding: 75px 20px 190px;
-    background: #fff url('../img/cont-bg.png') center 180px no-repeat;
+    background: url('../img/cont-bg.png') center 180px no-repeat,
+    			url('../img/catalog-item-bg-2.png') 100% 53% no-repeat;
 	
 	&__header {
 

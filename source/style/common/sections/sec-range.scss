@@ -3,19 +3,27 @@
 .range {
 
 	padding-top: 60px;
+	padding-bottom: 100px;
 
 	&__header {
-
-		@extend .contacts__header;
+		@extend .interest__header;
 		margin-bottom: 60px;
 	}
 
 	&-product {
 
+		background: url('../img/range-bg-3.png') right 13% no-repeat,
+					url('../img/catalog-item-bg-5.png') left 30% no-repeat,
+					url('../img/catalog-item-bg-2.png') right 45% no-repeat,
+					url('../img/catalog-item-bg-3.png') left 65% no-repeat,
+					url('../img/range-bg-5.png') right 82% no-repeat,
+					url('../img/catalog-item-bg-1.png') left 100% no-repeat;
+
 		&__header {
 
 			width: 100%;
 			margin-bottom: 60px;
+			background-color: $white-color;
 
 			.requisites {
 				height: 250px;
@@ -49,9 +57,10 @@
 		.range__list {
 			@include font-type($black-color, $regular-font, 1.4em, 1.2, 0);
 			width: 100%;
-			margin: 0 30px;
+			margin: 0 50px 0 30px;
 
 			border: 1px solid $black-color;
+			background-color: rgba(255,255,255,.9);
 
 			th,
 			td,
@@ -98,7 +107,6 @@
 		padding-left: 100px;
 		text-decoration: underline;
 		text-align: center;
-		margin-bottom: 100px;
 		@include font-type($black-color, $bold-font, 1.8em, 100px, 0);
 	}
 }
