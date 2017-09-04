@@ -92,6 +92,7 @@
 
 			width: 400px; height: 320px; background-color: $white-color;
 			padding-left: 45px;
+			padding-right: 60px;
 
 			box-shadow: 4px 7px 22px 0 rgba(0, 0, 2, 0.19);
 
@@ -235,7 +236,8 @@
 			}
 		}
 
-		&:last-child {
+		&:last-child,
+		&.last {
 
 			margin-bottom: 95px;
 
